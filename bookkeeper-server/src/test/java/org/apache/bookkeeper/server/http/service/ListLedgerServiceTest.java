@@ -55,6 +55,7 @@ public class ListLedgerServiceTest extends BookKeeperClusterTestCase {
     private final ObjectMapper mapper = new ObjectMapper();
     private ListLedgerService listLedgerService;
 
+    @Before
     public ListLedgerServiceTest() {
         super(1);
     }

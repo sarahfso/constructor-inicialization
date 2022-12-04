@@ -40,6 +40,7 @@ import org.junit.Test;
  */
 public class AutoRecoveryMainTest extends BookKeeperClusterTestCase {
 
+    @Before
     public AutoRecoveryMainTest() {
         super(3);
     }

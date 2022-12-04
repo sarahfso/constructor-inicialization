@@ -37,6 +37,8 @@ import org.junit.Test;
 public class AutoRecoveryStatusServiceTest extends BookKeeperClusterTestCase {
     private final ObjectMapper mapper = new ObjectMapper();
     private AutoRecoveryStatusService autoRecoveryStatusService;
+    
+    @Before
     public AutoRecoveryStatusServiceTest() {
         super(1);
     }

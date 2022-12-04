@@ -122,10 +122,12 @@ public class TestReplicationWorker extends BookKeeperClusterTestCase {
     private OrderedScheduler scheduler;
     private String zkLedgersRootPath;
 
+    @Before
     public TestReplicationWorker() {
         this("org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory");
     }
 
+    @Before
     TestReplicationWorker(String ledgerManagerFactory) {
         super(3, 300);
         LOG.info("Running test case using ledger manager : "
